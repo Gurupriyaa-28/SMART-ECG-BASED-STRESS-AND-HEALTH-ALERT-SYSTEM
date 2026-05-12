@@ -18,7 +18,9 @@ R-peak detection
 BPM estimation using peak intervals
 GSM-based communication
 Real-time embedded programming
+
 🧩 Components Required
+
 | Component              | Purpose                       |
 | ---------------------- | ----------------------------- |
 | Arduino Uno            | Main controller               |
@@ -39,7 +41,9 @@ Real-time embedded programming
 | GSM TX     | D7          |
 | GSM RX     | D8          |
 | LEDs       | D4, D5, D6  |
+
 ⚙️ System Operation
+
 ECG electrodes collect heart signals from the body.
 The AD8232 module amplifies and conditions the ECG waveform.
 Arduino reads the analog ECG signal.
@@ -53,14 +57,18 @@ Above 100 BPM → High
 Results are shown on the OLED display.
 LEDs visually indicate stress condition.
 GSM module sends SMS alerts during abnormal conditions.
+
 💻 Software Details
+
 Development Platform: Arduino IDE
 Programming Language: Embedded C/C++
 Libraries Used:
 Adafruit SSD1306
 Adafruit GFX
 SoftwareSerial
+
 🚨 Stress Alert Conditions
+
 | BPM Range  | Stress Level | Indication    |
 | ---------- | ------------ | ------------- |
 | < 60 BPM   | Low          | Green LED     |
